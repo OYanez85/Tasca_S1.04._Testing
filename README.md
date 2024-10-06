@@ -10,6 +10,8 @@ This project consists of a series of Java exercises organized into three levels 
 
 - **JUnit**: For unit testing
 
+- **AssertJ**: For fluent assertions
+
 - **Maven**: For dependency management
 
 - **Git/GitHub**: For version control and repository management
@@ -71,53 +73,58 @@ git commit -m "Your commit message"
 Push the branch to your fork:
 
 git push origin feature/your-feature-name
+
 Open a pull request to merge your changes into the main repository.
 
 📋 Level Structure
-
 Level 1
 
 Exercise 1: Create a class that manages a collection of books in a library, allowing for adding, retrieving, and removing books.
-
 Exercise 2: Implement a JUnit test to verify the library functionalities.
 
 Level 2
 
-Exercise 1: Create a class for restaurant management, implementing necessary methods to avoid duplicates.
+Exercise 1: Create assertions that demonstrate that the value of two integer objects is equal, and another that indicates that it is not.
+Exercise 2: Create assertions to verify object references are the same or different.
+Exercise 3: Assert that two arrays of integers are identical.
+Exercise 4: Create an ArrayList containing various types of objects and write assertions to verify their order and uniqueness.
+Exercise 5: Create a map and verify that it contains a specified key.
+Exercise 6: Trigger an ArrayIndexOutOfBoundsException in a class and create an assertion that validates the exception is thrown.
+Exercise 7: Create an empty Optional object and write an assertion to verify it is indeed empty.
 
 Level 3
 
-Exercise 1: Develop an application to manage a CSV file containing names and details, with sorting functionalities.
+Exercise 1: Develop a calculator class with methods for basic operations, implementing TDD principles to ensure functionality through tests.
 
 🐧 Debian Commands Used
+
 Here are the Debian commands used in the project:
 
 Clone the repository:
 
 git clone https://github.com/OYanez85/Tasca_S1.04._Testing.git
+
 Navigate to the project directory:
 
 cd Tasca_S1.04._Testing
+
 Create required directories:
 
 mkdir -p "Nivell_1:_JUnit/Exercici_1"
 mkdir -p "Nivell_1:_JUnit/libs"
+
 Move JUnit JAR file:
 
 mv ~/Downloads/junit-platform-console-standalone-1.7.0.jar Nivell_1:_JUnit/libs/
+
 Compile Java files:
 
 javac -cp "Nivell_1:_JUnit/libs/junit-platform-console-standalone-1.7.0.jar" Nivell_1:_JUnit/Exercici_1/*.java
+
 Run the main program:
 
 java -cp ".:Nivell_1:_JUnit/libs/junit-platform-console-standalone-1.7.0.jar" Main
+
 Run JUnit tests:
 
 java -cp ".:Nivell_1:_JUnit/libs/junit-platform-console-standalone-1.7.0.jar" org.junit.platform.console.ConsoleLauncher --scan-class-path
-Conclusion
-This README provides an overview of the project, its structure, and the commands used to execute and manage the Java exercises. Follow the guidelines to ensure proper setup and functionality.
-
-### Instructions:
-1. **Create a new file named `README.md`** in your project's root directory (`~/Tasca_S1.04_Testing/Nivell_3-JUnit/Exercici_1/`).
-2. **Copy and paste the above content** into the file.
-3. **Save and close the file**.
